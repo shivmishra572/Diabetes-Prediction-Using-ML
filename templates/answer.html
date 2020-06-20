@@ -1,0 +1,24 @@
+<html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Combo&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+        <title>Diabetes Prediction</title>
+    </head>
+    <body>
+        <div class="header">
+            <h2 class="title"> DIABETES PREDICTOR </h2>
+        </div>
+        <div class="middle">
+            <div class="input">
+                 {{ prediction_text }} 
+            </div>  
+                
+        </div>
+    </body>
+    </html>
+</html>

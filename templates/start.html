@@ -1,0 +1,34 @@
+<html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Combo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Combo&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+        <title>Diabetes Prediction</title>
+    </head>
+    <body>
+        <div class="header">
+            <h2 class="title"> DIABETES PREDICTOR </h2>
+        </div>
+        <div class="middle">
+            <div class="input-fields">
+                <form action="{{ url_for('predict')}}"method="post">
+                    <input class="input" type="text" name="pregnancies" placeholder="PREGNANCIES " required="required" />
+                    <input class="input" type="text" name="glucose" placeholder="GLUCOSE (mmol/L) " required="required" />
+                    <input class="input" type="text" name="bloodpressure" placeholder="BLOOD PRESSURE (mmHg)" required="required" />
+                    <input class="input" type="text" name="skin thickness" placeholder="SKIN THICKNESS (mm)" required="required" />
+                    <input class="input" type="text" name="insulin" placeholder="INSULIN (ml)" required="required" />
+                    <input class="input" type="text" name="BMI" placeholder="BMI (kg/m2)" required="required" />
+                    <input class="input" type="text" name="diabetesfn" placeholder="DIABETES PEDIGREE FUNCTION " required="required" />
+                    <input class="input" type="text" name="age" placeholder="AGE" required="required" />
+                    <button class="btn btn-primary btn-block btn-large">Predict</button>
+            </div>  
+                
+        </div>
+    </body>
+    </html>
+</html>
